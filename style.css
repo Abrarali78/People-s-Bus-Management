@@ -1,0 +1,157 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0099ff;
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.navbar .logo-img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-links .search-btn {
+    padding: 5px 10px;
+    background-color: yellow;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Section */
+.main-section {
+    position:relative;
+    text-align: row;
+    align-items: center;    
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+}
+
+.book-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color:whitesmoke;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.social img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links .search-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .book-now-btn {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo-img {
+        height: 40px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .book-now-btn {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .footer-socials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social img {
+        height: 25px;
+    }
+
+    .footer-note {
+        font-size: 12px;
+    }
+}
